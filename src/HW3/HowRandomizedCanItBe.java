@@ -7,7 +7,7 @@ public class HowRandomizedCanItBe {
 		public static void main(String[] args) {
 			Scanner scanner = new Scanner(System.in);
 			
-			System.out.println("Comrade, welcome to the GuessNumberSession. As always, one wrong guess gets you closer to the Gulag. So be cautious with your each guess!");
+			System.out.println("Comrade, welcome to the GuessNumberSession. As always, each wrong guess gets you closer to the Gulag. So be cautious with it!");
 			System.out.println("");
 			System.out.println("Enter Your Name, comrade: ");
 			String Name = scanner.nextLine();

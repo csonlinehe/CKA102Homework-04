@@ -12,8 +12,9 @@ public class SovietGuessTheNumberGame {
 		public void getGreeting() {
 			System.out.println("Please Enter Your Name, Comrade!");
 			yourName = scanner.nextLine();
-			if (yourName.equals("Stalin") || yourName.equals("STALIN")) {
+			if (yourName.equals("Stalin") || yourName.equals("STALIN") || yourName.equals("stalin")) {
 				System.out.println("Comrade. Your date of execution is... Tomorrow!");
+				System.exit(0);
 			}
 		}
 //		public void guessNumber() { //多餘的，留著當作紀念
@@ -62,13 +63,14 @@ public class SovietGuessTheNumberGame {
 						System.out.println("Comrade Stalin is upset with your performance... Your next stop will be... Gulag!");
 					}
 				if (a == b) {
-					System.out.println("Congratulations! Comrade " + yourName + ", your extra slavness has paid off. You guessed the exact number right!");
+					System.out.println("Congratulations! Comrade " + yourName + ", your extra slavness has paid off. You guessed the exact number " + "(" + b + ")" + " right!");
 					System.out.println("");
 					System.out.println("*Comrade Stalin presents you a suspicious trophy of a man in tracksuits. Do you receive it? (Y/N)");
 					scanner.nextLine();
 					String Choice1 = scanner.nextLine();
 					if (Choice1.equals("Y") || Choice1.equals("y")) {
 						System.out.println("Very Nice! Comrade " + yourName + ". You will be an honorable Soviet Russian citizen hereafter!");
+						System.out.println("");
 						System.out.println("Comrade Stalin gives you a warm hug of Soviet welcome. Your Slavness is now off the charts");
 					} else if (Choice1.equals("N") || Choice1.equals("n")) {
 						System.out.println("Comrade Stalin is disappointed in you. Your yearly ration of tracksuits is now revoked!");
